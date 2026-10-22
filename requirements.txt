@@ -1,0 +1,18 @@
+# Core app
+streamlit>=1.40,<2.0          # st.navigation / st.Page need >= 1.36
+pandas>=2.2,<3.0
+plotly>=5.24,<7.0
+
+# API
+requests>=2.32,<3.0
+tenacity>=8.5,<10.0           # retry with exponential backoff
+
+# Database
+SQLAlchemy>=2.0.30,<3.0
+psycopg2-binary>=2.9.9,<3.0   # PostgreSQL driver
+
+# Configuration
+python-dotenv>=1.0,<2.0
+
+# Testing
+pytest>=8.3,<9.0
