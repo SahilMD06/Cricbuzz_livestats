@@ -8,6 +8,7 @@ Database errors are translated into the application's own exceptions so
 pages can show a friendly message:
 
     23503 foreign_key_violation -> RecordInUseError
+    23001 restrict_violation    -> RecordInUseError  (PostgreSQL 18+ for ON DELETE RESTRICT)
     23505 unique_violation      -> DatabaseError("already exists")
     23514 check_violation       -> ValidationError
     connection problems         -> DatabaseConnectionError
@@ -37,7 +38,7 @@ def translate_db_error(exc: Exception) -> Exception:
     if isinstance(exc, OperationalError) and code is None:
         return DatabaseConnectionError("Lost connection to the database. Please retry.",
                                        detail=detail)
-    if code == "23503":
+    if code in ("23503", "23001"):
         return RecordInUseError(
             "This record is referenced by other records (e.g. a player with match "
             "history, or a team with players), so it cannot be deleted.", detail=detail)
