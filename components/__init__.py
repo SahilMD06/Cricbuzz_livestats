@@ -1,4 +1,1 @@
-"""Reusable Streamlit UI widgets shared by several pages.
-
-Status: placeholder - implemented in Phase 12.
-"""
+"""Reusable Streamlit UI widgets shared by several pages."""

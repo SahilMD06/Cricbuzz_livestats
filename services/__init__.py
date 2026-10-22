@@ -1,4 +1,1 @@
-"""Service layer: business logic between pages, API and repositories.
-
-Status: placeholder - implemented in Phase 9-10.
-"""
+"""Service layer: business rules between pages, the API client and repositories."""

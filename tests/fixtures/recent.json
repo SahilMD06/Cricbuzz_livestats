@@ -1,0 +1,96 @@
+{
+ "typeMatches": [
+  {
+   "matchType": "International",
+   "seriesMatches": [
+    {
+     "seriesAdWrapper": {
+      "seriesId": 9237,
+      "seriesName": "India tour of Australia, 2026",
+      "matches": [
+       {
+        "matchInfo": {
+         "matchId": 112345,
+         "seriesName": "India tour of Australia, 2026",
+         "matchDesc": "2nd ODI",
+         "matchFormat": "ODI",
+         "startDate": "1760941800000",
+         "state": "Complete",
+         "status": "India won by 8 wkts",
+         "team1": {
+          "teamId": 4,
+          "teamName": "Australia",
+          "teamSName": "AUS"
+         },
+         "team2": {
+          "teamId": 2,
+          "teamName": "India",
+          "teamSName": "IND"
+         },
+         "venueInfo": {
+          "id": 33,
+          "ground": "Adelaide Oval",
+          "city": "Adelaide"
+         }
+        },
+        "matchScore": {
+         "team1Score": {
+          "inngs1": {
+           "runs": 228,
+           "wickets": 9,
+           "overs": 49.6
+          }
+         },
+         "team2Score": {
+          "inngs1": {
+           "runs": 230,
+           "wickets": 2,
+           "overs": 38.3
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    {
+     "adDetail": {
+      "name": "ad",
+      "layout": "native"
+     }
+    }
+   ]
+  },
+  {
+   "matchType": "League",
+   "seriesMatches": [
+    {
+     "seriesAdWrapper": {
+      "seriesName": "Some T10 League",
+      "matches": [
+       {
+        "matchInfo": {
+         "matchId": 5,
+         "matchDesc": "Final",
+         "matchFormat": "T10",
+         "state": "Complete",
+         "status": "X won",
+         "team1": {
+          "teamId": 1,
+          "teamName": "A",
+          "teamSName": "A"
+         },
+         "team2": {
+          "teamId": 3,
+          "teamName": "B",
+          "teamSName": "B"
+         }
+        }
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

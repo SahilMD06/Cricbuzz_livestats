@@ -1,0 +1,39 @@
+{
+ "filter": {
+  "matchtype": [
+   {
+    "matchTypeId": "2",
+    "matchTypeDesc": "ODI"
+   }
+  ]
+ },
+ "headers": [
+  "Batter",
+  "M",
+  "I",
+  "R",
+  "Avg"
+ ],
+ "values": [
+  {
+   "values": [
+    "1413",
+    "Virat Kohli",
+    "305",
+    "293",
+    "14181",
+    "57.88"
+   ]
+  },
+  {
+   "values": [
+    "8733",
+    "Shubman Gill",
+    "55",
+    "55",
+    "2775",
+    "58.2"
+   ]
+  }
+ ]
+}

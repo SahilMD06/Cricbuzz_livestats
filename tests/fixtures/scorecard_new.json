@@ -1,0 +1,48 @@
+{
+ "scorecard": [
+  {
+   "matchid": 223344,
+   "inningsid": 1,
+   "batteamname": "England",
+   "batteamsname": "ENG",
+   "batsman": [
+    {
+     "id": 11,
+     "name": "Ben Duckett",
+     "runs": 63,
+     "balls": 48,
+     "fours": 9,
+     "sixes": 1,
+     "strkrate": "131.25",
+     "outdec": "c Rizwan b Afridi"
+    },
+    {
+     "id": 12,
+     "name": "Joe Root",
+     "runs": 12,
+     "balls": 10,
+     "fours": 1,
+     "sixes": 0,
+     "strkrate": "120",
+     "outdec": "not out"
+    }
+   ],
+   "bowler": [
+    {
+     "id": 21,
+     "name": "Shaheen Afridi",
+     "overs": "4",
+     "maidens": 0,
+     "runs": 28,
+     "wickets": 1,
+     "economy": "7"
+    }
+   ],
+   "score": 160,
+   "wickets": 1,
+   "overs": 16.2
+  }
+ ],
+ "ismatchcomplete": true,
+ "status": "Pakistan won by 23 runs"
+}

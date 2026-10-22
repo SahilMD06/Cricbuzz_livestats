@@ -1,0 +1,25 @@
+{
+ "matchid": 223344,
+ "matchdesc": "1st T20I",
+ "matchformat": "T20",
+ "startdate": "1760000000000",
+ "state": "Complete",
+ "status": "Pakistan won by 23 runs",
+ "tossstatus": "England opt to bowl",
+ "team1": {
+  "teamid": 7,
+  "teamname": "Pakistan",
+  "teamsname": "PAK"
+ },
+ "team2": {
+  "teamid": 9,
+  "teamname": "England",
+  "teamsname": "ENG"
+ },
+ "venueinfo": {
+  "id": 50,
+  "ground": "Gaddafi Stadium",
+  "city": "Lahore",
+  "country": "Pakistan"
+ }
+}

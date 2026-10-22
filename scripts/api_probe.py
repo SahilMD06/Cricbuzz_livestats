@@ -1,7 +1,7 @@
-"""One-time exploration of the Cricbuzz API (Phase 5).
+"""One-time exploration of the Cricbuzz API.
 
-Saves raw responses to data/raw/ so parsers can be built offline and
-reused as test fixtures. Uses about 6 API calls.
+Saves raw responses to data/raw/ so parsers can be checked offline and reused
+as test fixtures. Uses about 6 API calls.
 
 Usage (from the project root):
     python -m scripts.api_probe
@@ -37,11 +37,13 @@ def probe(name: str, path: str) -> dict:
 
 def first_match_id(payload: dict) -> int:
     """Return the first real (non-advert) matchId from a matches list payload."""
-    for type_block in payload.get("typeMatches", []):
-        for series in type_block.get("seriesMatches", []):
-            wrapper = series.get("seriesAdWrapper")
+    for type_block in payload.get("typeMatches", payload.get("typematches", [])):
+        for series in type_block.get("seriesMatches", type_block.get("seriesmatches", [])):
+            wrapper = series.get("seriesAdWrapper") or series.get("seriesadwrapper")
             if wrapper and wrapper.get("matches"):
-                return wrapper["matches"][0]["matchInfo"]["matchId"]
+                info = wrapper["matches"][0].get("matchInfo") or wrapper["matches"][0].get(
+                    "matchinfo")
+                return info.get("matchId") or info.get("matchid")
     raise ValueError("No matches found in payload")
 
 

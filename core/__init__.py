@@ -1,4 +1,1 @@
-"""Cross-cutting definitions shared by every layer.
-
-Status: placeholder - implemented in Phase 9.
-"""
+"""Cross-cutting definitions shared by every layer (exception hierarchy)."""

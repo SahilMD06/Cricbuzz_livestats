@@ -1,4 +1,1 @@
-"""Domain dataclasses passed between layers (Player, Match, ...).
-
-Status: placeholder - implemented in Phase 10.
-"""
+"""Domain dataclasses and allowed values shared between layers."""

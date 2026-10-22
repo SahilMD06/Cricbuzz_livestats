@@ -1,4 +1,1 @@
-"""Analytics layer: loads and runs the 25 SQL queries.
-
-Status: placeholder - implemented in Phase 11.
-"""
+"""Analytics layer: registry of the 25 SQL questions and the runner that executes them."""

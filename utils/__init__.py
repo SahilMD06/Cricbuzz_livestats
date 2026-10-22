@@ -1,4 +1,1 @@
-"""Utility helpers.
-
-Status: placeholder - implemented in Phase 8.
-"""
+"""Utility helpers: database connection, logging, validation, formatting."""

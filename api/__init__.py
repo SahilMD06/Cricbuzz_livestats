@@ -1,4 +1,1 @@
-"""API layer: HTTP access to Cricbuzz only. No SQL, no Streamlit.
-
-Status: placeholder - implemented in Phase 9.
-"""
+"""API layer: HTTP access to the Cricbuzz API only (no SQL, no Streamlit)."""

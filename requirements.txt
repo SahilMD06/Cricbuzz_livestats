@@ -1,7 +1,10 @@
+# Ranges: lower bound = features we use; upper bound = next untested major version.
+# Tested with: streamlit 1.66, pandas 3.0, plotly 7.1, SQLAlchemy 2.1, pytest 9.1
+
 # Core app
-streamlit>=1.40,<2.0          # st.navigation / st.Page need >= 1.36
-pandas>=2.2,<3.0
-plotly>=5.24,<7.0
+streamlit>=1.48,<2.0          # st.navigation, st.fragment, width="stretch"
+pandas>=2.2,<4.0
+plotly>=5.24,<8.0
 
 # API
 requests>=2.32,<3.0
@@ -15,4 +18,4 @@ psycopg2-binary>=2.9.9,<3.0   # PostgreSQL driver
 python-dotenv>=1.0,<2.0
 
 # Testing
-pytest>=8.3,<9.0
+pytest>=8.3,<10.0

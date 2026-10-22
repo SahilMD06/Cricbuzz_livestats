@@ -1,3 +1,3 @@
 # notebooks/
 
-`data_fetching.ipynb` (optional, O-01): explore API calls and push sample rows to the DB. Created in Phase 9.
+`data_fetching.ipynb` (optional, from the brief): explore the Cricbuzz API step by step and load one match into the database. Run Jupyter from the project root so imports resolve.

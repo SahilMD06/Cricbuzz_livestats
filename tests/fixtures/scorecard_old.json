@@ -1,0 +1,117 @@
+{
+ "scoreCard": [
+  {
+   "matchId": 112345,
+   "inningsId": 1,
+   "batTeamDetails": {
+    "batTeamId": 2,
+    "batTeamName": "India",
+    "batTeamShortName": "IND",
+    "batsmenData": {
+     "bat_1": {
+      "batId": 1413,
+      "batName": "Rohit Sharma",
+      "runs": 34,
+      "balls": 41,
+      "fours": 4,
+      "sixes": 1,
+      "strikeRate": 82.93,
+      "outDesc": "c Carey b Starc"
+     },
+     "bat_2": {
+      "batId": 8733,
+      "batName": "Shubman Gill",
+      "runs": 101,
+      "balls": 96,
+      "fours": 10,
+      "sixes": 2,
+      "strikeRate": 105.2,
+      "outDesc": "not out"
+     },
+     "bat_10": {
+      "batId": 9999,
+      "batName": "Did Not Bat",
+      "runs": 0,
+      "balls": 0,
+      "fours": 0,
+      "sixes": 0,
+      "outDesc": ""
+     },
+     "bat_3": {
+      "batId": 1413000,
+      "batName": "Virat Kohli",
+      "runs": 77,
+      "balls": 70,
+      "fours": 7,
+      "sixes": 1,
+      "strikeRate": 110.0,
+      "outDesc": "lbw b Zampa"
+     }
+    }
+   },
+   "bowlTeamDetails": {
+    "bowlTeamId": 4,
+    "bowlTeamName": "Australia",
+    "bowlersData": {
+     "bowl_1": {
+      "bowlerId": 9311,
+      "bowlName": "Mitchell Starc",
+      "overs": 8.3,
+      "maidens": 0,
+      "runs": 41,
+      "wickets": 1,
+      "economy": 4.82
+     },
+     "bowl_2": {
+      "bowlerId": 9312,
+      "bowlName": "Adam Zampa",
+      "overs": 10,
+      "maidens": 1,
+      "runs": 55,
+      "wickets": 1,
+      "economy": 5.5
+     }
+    }
+   },
+   "scoreDetails": {
+    "runs": 230,
+    "wickets": 2,
+    "overs": 18.3
+   }
+  }
+ ],
+ "matchHeader": {
+  "matchId": 112345,
+  "matchDescription": "2nd ODI",
+  "matchFormat": "ODI",
+  "matchStartTimestamp": 1760941800000,
+  "status": "India won by 8 wkts",
+  "state": "Complete",
+  "complete": true,
+  "tossResults": {
+   "tossWinnerId": 4,
+   "tossWinnerName": "Australia",
+   "decision": "Batting"
+  },
+  "result": {
+   "resultType": "win",
+   "winningTeam": "India",
+   "winningteamId": 2,
+   "winningMargin": 8,
+   "winByRuns": false,
+   "winByInnings": false
+  },
+  "team1": {
+   "id": 4,
+   "name": "Australia",
+   "shortName": "AUS"
+  },
+  "team2": {
+   "id": 2,
+   "name": "India",
+   "shortName": "IND"
+  },
+  "seriesId": 9237,
+  "seriesName": "India tour of Australia, 2026"
+ }
+}
