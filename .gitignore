@@ -26,3 +26,6 @@ logs/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local package downloads
+_wheels/
