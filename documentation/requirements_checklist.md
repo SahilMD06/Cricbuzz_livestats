@@ -6,7 +6,7 @@ Legend: ☐ not started · 🔶 in progress · ✅ done
 | ID | Requirement | Status |
 |---|---|---|
 | M-01..07 | API integration (requests, live, players, series, errors, key security) | ☐ |
-| M-08..15 | SQL database (agnostic, utils/db_connection.py, indexes, schema + sample data, credentials, errors, NULL checks) | 🔶 designed |
+| M-08..15 | SQL database (agnostic, utils/db_connection.py, indexes, schema + sample data, credentials, errors, NULL checks) | 🔶 schema, indexes, views, db_connection, seed done; NULL checks come with the queries (Phase 11) |
 | M-16 | SQL Q1-Q8 (beginner) | ☐ 0/8 |
 | M-17 | SQL Q9-Q16 (intermediate) | ☐ 0/8 |
 | M-18 | SQL Q17-Q25 (advanced) | ☐ 0/9 |
@@ -19,7 +19,7 @@ Legend: ☐ not started · 🔶 in progress · ✅ done
 | M-31 | CRUD page | ☐ |
 | M-32 | Multi-page structure | 🔶 skeleton |
 | M-33..35 | PEP 8, modular, docstrings | 🔶 ongoing |
-| M-36 | Git version control | ☐ |
+| M-36 | Git version control | 🔶 repo + commits ongoing |
 | M-37 | Complete source code | ☐ |
 | M-38 | requirements.txt | ✅ |
 | M-39 | README with setup + API key config | 🔶 stub |
@@ -42,4 +42,4 @@ Legend: ☐ not started · 🔶 in progress · ✅ done
 | B-07 | Deployment | ☐ |
 | B-08 | pytest suite | ☐ |
 | B-09 | Ingestion log on Home | ☐ |
-| B-10 | Database views | ☐ |
+| B-10 | Database views | ✅ 4 views (sql/views.sql) |
