@@ -20,7 +20,8 @@ WITH recent AS (
 pairs AS (
     SELECT team_a, team_b FROM recent GROUP BY team_a, team_b HAVING COUNT(*) >= 5
 )
-SELECT ta.team_name                                                    AS team_a,
+SELECT ta.team_name || ' vs ' || tb.team_name                         AS matchup,
+       ta.team_name                                                    AS team_a,
        tb.team_name                                                    AS team_b,
        COUNT(*)                                                        AS matches,
        COUNT(*) FILTER (WHERE r.winner_id = r.team_a)                  AS team_a_wins,

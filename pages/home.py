@@ -27,12 +27,13 @@ def _ingestion_log():
 # ---------------------------------------------------------------- status
 try:
     s = _summary()
-    c = st.columns(5)
-    c[0].metric("Matches", f"{s['matches']:,}")
-    c[1].metric("Players", f"{s['players']:,}")
-    c[2].metric("Teams", s["teams"])
-    c[3].metric("Venues", s["venues"])
-    c[4].metric("Innings rows", f"{s['batting_rows'] + s['bowling_rows']:,}")
+    row1, row2 = st.columns(3), st.columns(3)
+    row1[0].metric("Matches", f"{s['matches']:,}")
+    row1[1].metric("Players", f"{s['players']:,}")
+    row1[2].metric("Innings rows", f"{s['batting_rows'] + s['bowling_rows']:,}")
+    row2[0].metric("Teams", s["teams"])
+    row2[1].metric("Venues", s["venues"])
+    row2[2].metric("Series", s["series"])
     st.caption(f"Data sources: {s['api_matches']} matches imported from the Cricbuzz API, "
                f"{s['seed_matches']} from the labelled seed dataset. Latest completed match: "
                f"{s['latest_match'] or '—'}.")

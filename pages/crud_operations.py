@@ -239,7 +239,7 @@ with player_tab:
             if pid:
                 st.warning(f"Delete **{label}**? Players with match history cannot be "
                            "deleted (it would corrupt scorecards).")
-                if st.checkbox("I understand this cannot be undone", key="p_confirm") and \
+                if st.checkbox("I understand this cannot be undone", key=f"p_confirm_{pid}") and \
                         st.button("Delete player", type="primary"):
                     players.delete(pid)
                     saved("Player deleted")
@@ -288,7 +288,7 @@ with match_tab:
             if mid:
                 st.warning("Deleting a match also deletes all of its batting and bowling "
                            "innings (ON DELETE CASCADE).")
-                if st.checkbox("I understand this cannot be undone", key="m_confirm") and \
+                if st.checkbox("I understand this cannot be undone", key=f"m_confirm_{mid}") and \
                         st.button("Delete match", type="primary"):
                     matches.delete(mid)
                     saved("Match deleted")
