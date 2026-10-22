@@ -81,3 +81,19 @@ def test_top_stats_and_venue(load_fixture):
     rows = tf.parse_top_stats(load_fixture("topstats"))
     assert rows[0]["player_id"] == 1413 and rows[0]["Batter"] == "Virat Kohli"
     assert tf.parse_venue(load_fixture("venue"))["capacity"] == 132000
+
+
+def test_real_cricbuzz_response_2026(load_fixture):
+    """A real Cricbuzz v2 response (IND v NZ, 1st T20I, 22 Oct 2026)."""
+    meta = tf.parse_match_meta(load_fixture("real_scorecard_161190"),
+                               load_fixture("real_info_161190"))
+    assert (meta["match_format"], meta["match_description"]) == ("T20I", "1st T20I")
+    assert (meta["toss_winner_cb_id"], meta["toss_decision"]) == (2, "bowl")
+    assert (meta["winner_cb_id"], meta["victory_type"], meta["victory_margin"]) == (2, "wickets", 4)
+    assert meta["venue"] == {"id": 371, "name": "Hagley Oval", "city": "Christchurch",
+                             "country": "New Zealand", "capacity": 20000}
+    first, second = tf.parse_scorecard(load_fixture("real_scorecard_161190"), meta)
+    assert (first.batting_team_cb_id, first.bowling_team_cb_id) == (13, 2)
+    assert len(first.batting) == 6                       # 5 'did not bat' entries dropped
+    assert first.batting[3]["name"] == "Glenn Phillips" and not first.batting[3]["is_out"]
+    assert second.bowling[0]["balls_bowled"] == 22       # 3.4 overs

@@ -116,7 +116,8 @@ class IngestionService:
 
         venue_details = None
         venue_cb = meta["venue"]["id"]
-        if fetch_venue and venue_cb:
+        # Newer API versions include country/capacity in match info: no extra call needed.
+        if fetch_venue and venue_cb and not meta["venue"]["country"]:
             with self.engine.connect() as conn:
                 known = VenueRepository.find_by_cricbuzz_id(conn, venue_cb)
             if not known:
@@ -142,7 +143,7 @@ class IngestionService:
             v = venue_details or {"venue_name": meta["venue"]["name"] or "Unknown ground",
                                   "city": meta["venue"]["city"] or "Unknown",
                                   "country": meta["venue"]["country"] or "Unknown",
-                                  "capacity": None}
+                                  "capacity": meta["venue"].get("capacity")}
             venue_id = VenueRepository.find_by_cricbuzz_id(conn, venue_cb) if venue_cb else None
             if venue_id is None:
                 venue_id = VenueRepository.upsert_api(conn, venue_cb, v["venue_name"], v["city"],

@@ -252,7 +252,8 @@ def parse_match_meta(*payloads: dict) -> dict:
         "venue": {"id": to_int(venue.get("id")),
                   "name": first(venue, "name", "ground", default=""),
                   "city": venue.get("city", ""),
-                  "country": venue.get("country", "")},
+                  "country": venue.get("country", ""),
+                  "capacity": _capacity(venue.get("capacity"))},
     }
     meta.update(parse_toss(toss_block, first(header, "tossstatus", default=None), teams))
     meta.update(parse_result(meta["status"], header.get("result"), teams))
