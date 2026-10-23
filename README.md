@@ -6,6 +6,9 @@ stores it in **PostgreSQL**, answers **25 SQL analytics questions**, and provide
 
 **Domain:** Sports Analytics · **Skills:** Python · SQL · Streamlit · REST API · JSON · pandas
 
+**🔗 Live demo:** https://cricbuzzlivestats-sahilmd06.streamlit.app/
+**💻 Source code:** https://github.com/SahilMD06/Cricbuzz_livestats
+
 ![Home page](documentation/screenshots/01_home.png)
 
 ---
